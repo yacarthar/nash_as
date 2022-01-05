@@ -1,0 +1,8 @@
+<ul class="posts">
+  <li *ngFor="let post of posts">
+    <a routerLink="/post/{{post.id}}">
+      <span class="badge">{{post.id}}</span> {{post.title}}
+    </a>
+    <button class="delete" title="delete post">x</button>
+  </li>
+</ul>
